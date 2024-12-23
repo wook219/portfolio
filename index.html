@@ -6,6 +6,9 @@
     <title>개발자 송진욱의 포트폴리오</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- 사이드바 수정 -->
@@ -93,6 +96,9 @@
                     <div class="social-links">
                         <a href="https://github.com/wook219" target="_blank" title="GitHub">
                             <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://wook99.tistory.com/" target="_blank" title="Tistory">
+                            <i class="fa-solid fa-blog"></i>
                         </a>
                         <a href="https://www.instagram.com/jinwk219" target="_blank" title="Instagram">
                             <i class="fa-brands fa-square-instagram"></i>
@@ -213,6 +219,34 @@
             <h2 class="projects-title">PROJECTS</h2>
             
             <div class="projects-grid">
+                        
+                <div class="project-card">
+                    <span class="project-type">인사잘해 (HR)</span>
+                    <div class="project-date">2024.11 - 2024.12 (5人 팀 프로젝트) - 4 Weeks</div>
+                    <h3 class="project-title">인사 및 근태 관리를 통합한 사내 HR 프로그램</h3>
+                    <div class="project-description">
+                        <ul>
+                            <li>공공데이터포털 공휴일 API를 사용하여 공휴일 조회</li>
+                            <li>REST API 를 이용한 클라이언트와 서버 독립 개발</li>
+                            <li>FullCalendar API를 사용하여 사원 일정 관리</li>
+                            <li>Swagger를 사용하여 API 문서화</li>
+                            <li>공통 AOP 클래스스를 사용한 메서드 예외 추적 및 실행 로깅</li>
+                        </ul>
+                    </div>
+                    <a href="http://34.47.90.224:3000/" class="project-link">http://34.47.90.224:3000/</a>
+                    <div class="tech-stack">
+                        <span>Java, Spring Boot, JPA, QueryDSL, MySQL, React, Bootstrap</span>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="project-button readme-btn" onclick="openReadmeModal(this)" data-project="project1">
+                            <i class="fa-solid fa-book"></i> README
+                        </button>
+                        <button class="project-button image-btn" onclick="openImageModal(this)" data-project="project1">
+                            <i class="fa-regular fa-image"></i> IMAGE
+                        </button>
+                    </div>
+                </div>
+
                 <!-- 엘리스 2차 프로젝트 편집 -->
                 <div class="project-card">
                     <span class="project-type">편집 (가구 판매 사이트)</span>
@@ -229,15 +263,15 @@
                     </div>
                     <a href="https://ehedrefxzmygttpe.tunnel-pt.elice.io/" class="project-link">https://ehedrefxzmygttpe.tunnel-pt.elice.io/</a>
                     <div class="tech-stack">
-                        <span>Java, Spring Boot, JPA, MySQL, AWS RDS, React, Bootstrap, Nginx</span>
+                        <span>Java, Spring Boot, JPA, MySQL, AWS RDS, React, Bootstrap</span>
                     </div>
                     <div class="project-buttons">
-                        <a href="https://github.com/wook219/pyeonjip-BE" class="project-button">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
-                        <a href="https://www.notion.so/elice-track/8f1d2a859a6d472e83d8e97456c1596e" class="project-button">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzj_kb1-Nj0Vv1nWFlVXvnFW_-ayB0AGYpcg&s" class="notion-icon"></img> Notion
-                        </a>
+                        <button class="project-button readme-btn" onclick="openReadmeModal(this)" data-project="project2">
+                            <i class="fa-solid fa-book"></i> README
+                        </button>
+                        <button class="project-button image-btn" onclick="openImageModal(this)" data-project="project2">
+                            <i class="fa-regular fa-image"></i> IMAGE
+                        </button>
                     </div>
                 </div>
         
@@ -259,12 +293,12 @@
                         <span>Java, Spring Boot, Thymeleaf, JPA, MySQL, Vanilla JS</span>
                     </div>
                     <div class="project-buttons">
-                        <a href="https://github.com/wook219/BeginAgain" class="project-button">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
-                        <a href="https://www.notion.so/elice-track/BeginAgain-6016c02cceb64c30b6120290a1c2aca3" class="project-button">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzj_kb1-Nj0Vv1nWFlVXvnFW_-ayB0AGYpcg&s" class="notion-icon"></img> Notion
-                        </a>
+                        <button class="project-button readme-btn" onclick="openReadmeModal(this)" data-project="project3">
+                            <i class="fa-solid fa-book"></i> README
+                        </button>
+                        <button class="project-button image-btn" onclick="openImageModal(this)" data-project="project3">
+                            <i class="fa-regular fa-image"></i> IMAGE
+                        </button>
                     </div>
                 </div>
         
@@ -282,27 +316,52 @@
                             <li>ajax를 활용한 클라이언트 측 실시간 유효성 검사</li>
                             <li>Cookie를 이용한 로그인 시 ID 저장 기능</li>
                             <li>회원가입 시 Kakao 우편번호 API 를 이용한 주소 검색</li>
-                            <li>JUnit4를 사용하여 기능별 단위테스트</li>
                         </ul>
                     </div>
                     <div class="tech-stack">
                         <span>Java, Spring, JSP, Mybatis, MySQL, Vanilla JS</span>
                     </div>
                     <div class="project-buttons">
-                        <a href="https://github.com/wook219/jcticket" class="project-button">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
-                        <a href="https://brave-galley-018.notion.site/JC-Ticket-3dee608928c3464592bb306fddc56d9c" class="project-button">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzj_kb1-Nj0Vv1nWFlVXvnFW_-ayB0AGYpcg&s" class="notion-icon"></img> Notion
-                        </a>
+                        <button class="project-button readme-btn" onclick="openReadmeModal(this)" data-project="project4">
+                            <i class="fa-solid fa-book"></i> README
+                        </button>
+                        <button class="project-button image-btn" onclick="openImageModal(this)" data-project="project4">
+                            <i class="fa-regular fa-image"></i> IMAGE
+                        </button>
                     </div>
                 </div>
-        
-                <div class="project-card">
-                    <span class="project-type">Coming Soon...</span>
-                </div>
+
             </div>
         </section>
+
+        <div id="readmeModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>README.md</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <!-- Modal content will be inserted here dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <div id="imageModal" class="modal">
+            <div class="image-modal-content">
+                <div class="modal-header">
+                    <h2>Project Images</h2>
+                    <span class="close-image">&times;</span>
+                </div>
+                <div class="modal-body image-gallery">
+                    <!-- Images will be inserted here dynamically -->
+                    <div class="image-controls">
+                        <button class="nav-btn prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-btn next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="image-counter">1 / 5</div>
+                </div>
+            </div>
+        </div>
 
         <hr>
 
@@ -310,6 +369,22 @@
             <h2 class="awards-title">Award</h2>
             
             <div class="awards-list">
+
+                <div class="award-item award-silver">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-header">
+                            <h3 class="award-title">엘리스 Cloud트랙 3차 프로젝트 최우수상</h3>
+                            <span class="award-date">2024.12.20</span>
+                        </div>
+                        <p class="award-description">
+                            엘리스 Cloud트랙 [웹 서비스 프로젝트 III] 최우수상 수상 (5팀중 2위)
+                        </p>
+                        <p class="award-issuer">(주)엘리스</p>
+                    </div>
+                </div>
                 
                 <div class="award-item award-gold">
                     <div class="award-icon">
@@ -353,7 +428,7 @@
             
             <div class="certificates-grid">
                 <!-- 정보처리기사 -->
-                <!-- <div class="certificate-card type-dev">
+                <div class="certificate-card type-dev">
                     <div class="certificate-icon">
                         <i class="fas fa-code"></i>
                     </div>
@@ -363,7 +438,7 @@
                         <p class="certificate-date">취득일: 2023.12.15</p>
                         <p class="certificate-issuer">한국산업인력공단</p>
                     </div>
-                </div> -->
+                </div>
         
                 <!-- SQL 개발자 -->
                 <div class="certificate-card type-database">
@@ -399,7 +474,6 @@
             <h2 class="career-title">CAREER</h2>
             
             <div class="career-timeline">
-                <!-- 회사 A -->
                 <div class="career-item">
                     <div class="career-header">
                         <div class="company-info">
@@ -416,19 +490,6 @@
                             <li>공연 실습 예산 및 무대 설치 관리</li>
                             <li>익년도(2023) 사업계획서 작성 - 학과 예산 전년(2022)대비 100%이상 인상 확정</li>
                         </ul>
-        
-                        <!-- <div class="tech-stack">
-                            <h4>사용 기술</h4>
-                            <div class="tech-badges">
-                                <span class="tech-badge">Java</span>
-                                <span class="tech-badge">Spring Boot</span>
-                                <span class="tech-badge">MySQL</span>
-                                <span class="tech-badge">Redis</span>
-                                <span class="tech-badge">Kafka</span>
-                                <span class="tech-badge">Docker</span>
-                                <span class="tech-badge">Kubernetes</span>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -440,5 +501,7 @@
     </button>
 
     <script src="index.js"></script>
+    <script src="readMe.js"></script>
+    <script src="image.js"></script>
 </body>
 </html>
