@@ -106,7 +106,15 @@ const readmeContents = {
             </div>
             <div class="link-container">
                 <label for="project-link" class="">WebSite : </label>
-                <a href="#" class="project-link">http://34.47.90.224:3000/</a>
+                <a href="http://43.202.4.58:3000" class="project-link">http://43.202.4.58:3000</a>
+            </div>
+            <div class="link-container">
+                <label for="project-link" class="">Admin Account : </label>
+                <span>ID : admin123@naver.com / password : asd123</span>
+            </div>
+            <div class="link-container test-account">
+                <label for="project-link" class="">User Account : </label>
+                <span>ID : hihi0219@naver.com / password : asd123</span>
             </div>
             <div class="link-container">
                 <label for="project-link" class="">Github(BE) : </label>
@@ -244,7 +252,7 @@ const readmeContents = {
 
             <i class="fa-solid fa-location-dot"></i>
             <h2>Summary</h2>
-            <p class = "summary-title">공연 티켓팅 웹 사이트 개발발</p>
+            <p class = "summary-title">공연 티켓팅 웹 사이트 개발</p>
 
             <ul>
                 <li>Naver, Kakao 소셜 로그인 구현</li>
@@ -257,7 +265,7 @@ const readmeContents = {
             </ul>
             <blockquote>
                 <p class = "summary-title">
-                개발 기능 : 로그인, 회원가입 구현현
+                개발 기능 : 로그인, 회원가입 구현
                 </p>
             </blockquote>
             <hr>
